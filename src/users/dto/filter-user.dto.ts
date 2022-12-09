@@ -3,6 +3,7 @@ import { Column } from 'typeorm';
 export class FilterUserDto {
   @Column()
   @IsString()
+  @IsOptional()
   @IsNotEmpty()
   filter_field: string;
 
@@ -20,6 +21,7 @@ export class FilterUserDto {
 
   @Column()
   @IsNotEmpty()
+  @IsOptional()
   sort_order_mode: 'ASC' | 'DESC';
 
   @Column()
