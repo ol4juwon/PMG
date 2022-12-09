@@ -12,7 +12,7 @@
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:dist": "ls dist/ && node dist/src/main.js",
+    "start:dist": "ls dist/ && node dist/main.js",
     "postinstall": "npm run prebuild",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
