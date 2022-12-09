@@ -1,6 +1,6 @@
 # PMG
 ## Hosted on Heroku 
-[pmg](https://pmg.herokuapp.com)
+[pmg](https://pmg-staging.herokuapp.com/api/v1)
 
 ## Tools
 - **Nestjs**
@@ -23,8 +23,8 @@
 - [x] Edit user
 - [x] Delete user
 ## Links
-- [Home](https://)
-- [Api v1 Base URl](https:///api/v1)
+- [Home](https://pmg-staging.herokuapp.com/api/v1)
+- [Api v1 Base URl](https://pmg-staging.herokuapp.com/api/v1)
 
 ## Installation instructions
 - Download the code from github (Main branch)
