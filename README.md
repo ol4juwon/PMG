@@ -4,11 +4,12 @@
 
 ## Tools
 - **Nestjs**
+- **Typescript**
 - **Postgresql** - SQL DB
 - **Jest** Test framework
 - **Docker** Container
 ## Endpoints
-- Auth [/users]
+- Users [/users]
   1. Create User [/][GET]
   2. Get one user [/][GET]
   3. Get all users [/:id?queries][GET]
