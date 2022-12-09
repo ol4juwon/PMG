@@ -1,6 +1,6 @@
 # PMG
 ## Hosted on Heroku 
-[pmg](https://throvetest.herokuapp.com)
+[pmg](https://pmg.herokuapp.com)
 
 ## Tools
 - **Nestjs**
