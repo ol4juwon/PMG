@@ -13,22 +13,22 @@ export class User extends BaseEntity {
   @PrimaryGeneratedColumn({ name: 'user_id' })
   id: number;
 
-  @Column()
+  @Column({ nullable: false })
   @IsString()
   @IsNotEmpty()
   firstname: string;
 
-  @Column()
+  @Column({ nullable: false })
   @IsString()
   @IsNotEmpty()
   lastname: string;
 
-  @Column()
+  @Column({ nullable: false })
   @IsString()
   @IsNotEmpty()
   gender: string;
 
-  @Column()
+  @Column({ nullable: false })
   @IsString()
   @IsISO8601()
   @IsNotEmpty()

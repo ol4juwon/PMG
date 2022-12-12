@@ -34,7 +34,7 @@ export class UsersController {
         console.error(error);
         res.status(402).send({ error });
       }
-      res.status(201).send({ data, message: 'User created successfully' });
+      res.status(201).send({ data });
     } catch (e) {
       return res.status(500).send('Contact support');
     }
@@ -72,9 +72,7 @@ export class UsersController {
         updateUserDto,
       );
       if (error) return res.status(400).send({ error });
-      return res
-        .status(200)
-        .send({ data: data.raw[0], message: 'Update successful' });
+      return res.status(200).send({ data: data.raw[0] });
     } catch (e) {
       throw new BadRequestException(e);
     }
@@ -92,7 +90,7 @@ export class UsersController {
       }
       if (data) return res.status(200).send();
     } catch (e) {
-      throw new BadGatewayException();
+      throw new BadGatewayException(e);
     }
   }
 }

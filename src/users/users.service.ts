@@ -49,10 +49,12 @@ export class UsersService {
       take: number;
       where?: { [x: string]: FindOperator<string> };
       order: any;
+      // cache: boolean;
     } = {
       skip: 0,
       take: 25,
       order: { id: 'ASC' },
+      // cache: true,
     };
     const skip = page ? page - 1 : 0;
     searchQuery.skip = skip;
